@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+</head>
+
+<body>
+    <h3>Hello this is a Homepage for:</h3>
+    <h2>{{org_data.name}}</h2>
+    <p>Located in {{org_data.country}}</p>
+    <p>Visit our <a href="{{org_data.cui_url}}">CUI website</a> </p>
+
+    <p>Now go to the <a href={{url_for("activities")}}>Activities Page</a></p>
+
+</body>
+
+</html>

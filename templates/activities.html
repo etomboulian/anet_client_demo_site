@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+</head>
+
+<body>
+
+    <h2>Here is the first page of the activity list</h2>
+    <ul>
+        {% for activity in activity_data %}
+        <li><a href={{url_for("activity_details", activity_id=activity.activity_id)}}>{{activity.activity_name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <p>Back to <a href={{url_for("home")}}>Home</a></p>
+
+
+</body>
+
+</html>
